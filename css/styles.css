@@ -12,13 +12,18 @@
   .header {
     padding: 80px;
     text-align: center;
-    background: #1abc9c;
-    color: white;
+    color: rgb(0, 0, 0);
   }
-  
+  .header{
+    background-image: url(irina-iacob-qaUoTVTI6Cc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 60%;
+  }
+
   /* Increase the font size of the heading */
   .header h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
   
   /* Style the top navigation bar */
@@ -33,7 +38,7 @@
   .navbar a {
     float: right;
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -87,18 +92,33 @@
   .fakeimg {
     background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    padding: 0px;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .video{
+    background-color: transparent;
+    width: fit-content;
+    height: 300px;
+    padding: 0%;
+    object-fit: fill;
   }
   
   /* Footer */
   .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+  }
+  .footer{
+    background-image: url(irina-iacob-qaUoTVTI6Cc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 90%;
   }
   
-  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 700px) {
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
     .row {   
       flex-direction: column;
     }
