@@ -98,8 +98,9 @@
   }
 
   .icons {
-  background-color: transparent;
-  width: fit-content;  
+    background-color: transparent;
+    width: 30px;
+    height: 30px;  
   }
 
   .video{
