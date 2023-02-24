@@ -164,4 +164,14 @@
     height: 100%;
 
   }
+
+  .parallax {
+    /* The image used */
+    background-image: url("debrabandere_paul_eindwerk.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   
