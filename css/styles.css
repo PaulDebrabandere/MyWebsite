@@ -92,6 +92,7 @@
     padding: 20px;
     width: 25%;
     float: left;
+    text-align: justify;
   }
   
   /* Main column */
@@ -100,6 +101,7 @@
     padding: 20px;
     width: 65%;
     float: left;
+    text-align: justify;
   }
   /* Fake image, just for this example */
   .fakeimg {
