@@ -65,35 +65,27 @@
 
   /* Column container */
   .row {  
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
+    content: "";
+    display: table;
+    clear: both;
   }
   
   /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
   .side {
-    -ms-flex: 30%; /* IE10 */
-    flex: 30%;
-    background-color: #f1f1f1;
+    background-color: #e3e2e2;
     padding: 20px;
-    table-layout: fixed;
-    width: 200px;
+    width: 25%;
+    float: left;
   }
   
   /* Main column */
   .main {   
-    -ms-flex: 60%; /* IE10 */
-    flex: 60%;
     background-color: white;
     padding: 20px;
+    width: 65%;
+    float: left;
   }
-  .rightside {
-    padding: 20px;
-    flex: 10%;
-  }
-  
   /* Fake image, just for this example */
   .fakeimg {
     background-color: #aaa;
@@ -101,6 +93,7 @@
     padding: 0px;
     object-fit: cover;
     object-position: center center;
+    border-radius: 20px;
   }
 
   .icons {
@@ -109,14 +102,13 @@
     height: 30px;  
     object-fit: cover;
     object-position: center center;
+    border-radius: 20%;
   }
 
   .video{
-    background-color: transparent;
-    width: fit-content;
-    height: 300px;
-    padding: 0%;
+    width: 75%;
     object-fit: fill;
+    border-radius: 20px;
   }
   
   /* Footer */
@@ -134,27 +126,16 @@
 
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
-    .row {   
-      flex-direction: column;
-    }
-  }
-  
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .navbar a {
-      float: none;
+    .main, .side {   
       width: 100%;
     }
   }
-  
-  #myVideo {
-    position: fixed;
-    right: center;
-    bottom: center;
-    width: 100%;
-    height: 100%;
-
+  @media screen and (max-width: 1500px) {
+    .video {   
+      width: 100%;
+    }
   }
+
   .myVideo {
     background-color: black;
     position: fixed;
