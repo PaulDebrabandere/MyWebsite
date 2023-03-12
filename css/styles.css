@@ -169,6 +169,7 @@
   div.gallery {
     border: 1px solid #d6d6d6;
     border-radius: 25px;
+    margin: 10px;
   }
   
   div.gallery:hover {
@@ -193,15 +194,15 @@
   }
   
   .responsive {
-    padding: 0 10px;
+    padding: 0 5px;
     float: left;
     width: 25%;
   }
   
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1300px) {
     .responsive {
-      width: 25%;
-      margin: 10px 0;
+      width: 50%;
+      margin: 5px 0;
     }
   }
   
