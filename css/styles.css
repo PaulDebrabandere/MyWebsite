@@ -100,7 +100,7 @@
   .main {   
     background-color: white;
     padding: 20px;
-    padding-right: 50px;
+    padding-right: 8%;
     flex: 65%;
     float: left;
     text-align: justify;
